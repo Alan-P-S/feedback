@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form action="submit.php" method="POST" id="form">
+        <div class="rating-box">
+            <table>
+            <tr>
+                <td> <label>Name</h1>
+                </td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td> 
+                    <label>Branch</label></td>
+                   <td> <select name="branch" id="branch">
+                    
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Semester</label></td>
+                <td><select name="semester" id="semester">
+                    <option value="">Choose Option</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Subject</label></td>
+                <td><select name="subjects" id="subjects">
+                    <option value="">Choose Option</option>
+                </select></td>
+            </tr>
+        </table>
+            
+        </div>
+    <div class="rating-box">
+        <header>Knowledge of the teacher in the course.</header>
+        <div class="stars" data-question="q1">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q1" id="rating_q1">
+    </div>
+    <div class="rating-box">
+        <header>Clarity & understanding of the teacher's Explanation.</header>
+        <div class="stars" data-question="q2">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q2" id="rating_q2">
+    </div>
+    <div class="rating-box">
+        <header>Teacher's willngness to help in personal & academic levels.</header>
+        <div class="stars" data-question="q3">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q3" id="rating_q3">
+    </div>
+    <div class="rating-box">
+        <header>Teacher give notes with proper explanation.</header>
+        <div class="stars" data-question="q4">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q4" id="rating_q4">
+    </div>
+    <div class="rating-box">
+        <header>Teacher's ability to organize lectures</header>
+        <div class="stars" data-question="q5">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q5" id="rating_q5">
+    </div>
+    <div class="rating-box">
+        <header>Speed or pace of course coverage & class room lectures.</header>
+        <div class="stars" data-question="q6">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q6" id="rating_q6">
+    </div>
+    <div class="rating-box">
+        <header>Behavior of the teacher towards students</header>
+        <div class="stars" data-question="q7">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q7" id="rating_q7">
+    </div>
+    <div class="rating-box">
+        <header>Teacher promotes TLM*like quize,group discussion etc.</header>
+        <div class="stars" data-question="q8">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q8" id="rating_q8">
+    </div>
+    <div class="rating-box">
+        <header>Teacher uses ICTtools(laptops,projecors,online contents)</header>
+        <div class="stars" data-question="q9">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q9" id="rating_q9">
+    </div>
+    <div class="rating-box">
+        <header>Teacher spends time for moral ethics</header>
+        <div class="stars" data-question="q10">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q10" id="rating_q10">
+    </div>
+    <div class="rating-box">
+        <header>Teacher improves leadership qualities</header>
+        <div class="stars" data-question="q11">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q11" id="rating_q11">
+    </div>
+    <div class="rating-box">
+        <header>Teacher give industrial aspects of the subjtects.</header>
+        <div class="stars" data-question="q12">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q12" id="rating_q12">
+    </div>
+    <div class="rating-box">
+        <header>Overall teaching effectiveness of the teacher</header>
+        <div class="stars" data-question="q13">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating_q13" id="rating_q13">
+    </div>
+    <input type="submit" name="submit" id="submitbtn">
+</form>
+</body>
+</html>

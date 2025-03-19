@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    
+    margin-top: 10px;
+    background-color: #a4a4ff;
+}
+form{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+}
+
+.rating-box header{
+    
+}
+
+.rating-box{
+    width: 300px;
+    height: auto;
+   display: flex;
+   padding: 10px;
+   padding-inline: 20px;
+   flex-direction: column;
+   gap: 10px;
+   border-radius: 20px;
+   text-align: center;
+   background-color: white;
+   
+}
+
+.rating-box select{
+    color: white;
+    font-weight: bold;
+    border: 2px solid #4848c7;
+    border-radius: 10px;
+    padding: 10px;
+    width: 165px;
+    background-color: #a4a4ff;
+}
+.rating-box select option{
+    color: white;
+    font-weight: bold;
+    border: 2px solid #4848c7;
+    border-radius: 10px;
+    padding: 10px;
+    width: 165px;
+    background-color: #a4a4ff;
+}
+.rating-box input{
+    color: white;
+    font-weight: bold;
+    border: 2px solid #4848c7;
+    border-radius: 10px;
+    padding: 10px;
+    width: 165px;
+    background-color: #a4a4ff;
+}
+
+.rating-box .stars{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+.stars i{
+    color: #e6e6e6;
+    font-size: 25px;
+    cursor:pointer;
+    transition: color 0.2s ease;
+}
+
+.stars i.active{
+    color: #ff9c1a;
+
+}
+
+
+#submitbtn{
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: #7171ff;
+    border: 2px solid #4848c7;
+    border-radius: 20px;
+}

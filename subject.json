@@ -1,0 +1,8 @@
+{
+    "Mechanical":{"s1":["physics","chemister"],"s2":["engineering mechanics"]},
+
+    "Computer":{"s1":["physics"],"s2":["engineering mechanics"]},
+
+    "Electrical":{"s1":["physics"],"s2":["engineering mechanics"]}
+    
+}
