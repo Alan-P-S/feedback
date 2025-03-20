@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="admin.js" defer></script>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    
+    margin-top: 10px;
+    background-color: #a4a4ff;
+}
+form{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.rating-box{
+    width: 300px;
+    height: auto;
+   display: flex;
+   padding: 10px;
+   padding-inline: 20px;
+   flex-direction: column;
+   gap: 10px;
+   border-radius: 20px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color: white;
+   
+}
+
+.rating-box select{
+    color: white;
+    font-weight: bold;
+    border: 2px solid #4848c7;
+    border-radius: 10px;
+    padding: 10px;
+    width: 165px;
+    background-color: #a4a4ff;
+}
+.rating-box select option{
+    color: white;
+    font-weight: bold;
+    border: 2px solid #4848c7;
+    border-radius: 10px;
+    padding: 10px;
+    width: 165px;
+    background-color: #a4a4ff;
+}
+
+#submitb{
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    position: relative;
+    top: 5px;
+    left: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+#submitbtn{
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: #7171ff;
+    border: 2px solid #4848c7;
+    border-radius: 20px;
+}
+    </style>
+</head>
+<body>
+    <form action="admin.php" method="POST" id="frm">
+        <div class="rating-box">
+            <table>
+           
+            <tr>
+                <td> 
+                    <label>Branch</label></td>
+                   <td> <select name="branch" id="branch" required>
+                    
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Semester</label></td>
+                <td><select name="semester" id="semester" required>
+                    <option value="">Choose Option</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Subject</label></td>
+                <td><select name="subjects" id="subjects" required>
+                    <option value="">Choose Option</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><div id="submitb">
+                <input type="submit" name="get" value="GET-FORM" id="submitbtn">
+                <input type="submit" name="delete" value="DELETE-FORM" id="submitbtn">
+            </div></td>
+            </tr>
+        </table>
+        </div>
+        </form>
+
+</body>
+</html>

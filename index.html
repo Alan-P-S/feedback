@@ -9,30 +9,30 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <form action="submit.php" method="POST" id="form">
+    <form action="submit.php" method="POST" id="frm">
         <div class="rating-box">
             <table>
             <tr>
                 <td> <label>Name</h1>
                 </td>
-                <td><input type="text" id="name" name="name"></td>
+                <td><input type="text" id="name" name="name" required></td>
             </tr>
             <tr>
                 <td> 
                     <label>Branch</label></td>
-                   <td> <select name="branch" id="branch">
+                   <td> <select name="branch" id="branch" required>
                     
                 </select></td>
             </tr>
             <tr>
                 <td><label>Semester</label></td>
-                <td><select name="semester" id="semester">
+                <td><select name="semester" id="semester" required>
                     <option value="">Choose Option</option>
                 </select></td>
             </tr>
             <tr>
                 <td><label>Subject</label></td>
-                <td><select name="subjects" id="subjects">
+                <td><select name="subjects" id="subjects" required>
                     <option value="">Choose Option</option>
                 </select></td>
             </tr>
@@ -48,7 +48,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q1" id="rating_q1">
+        <input type="hidden" name="rating_q1" id="rating_q1" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Clarity & understanding of the teacher's Explanation.</header>
@@ -59,7 +59,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q2" id="rating_q2">
+        <input type="hidden" name="rating_q2" id="rating_q2" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Teacher's willngness to help in personal & academic levels.</header>
@@ -70,7 +70,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q3" id="rating_q3">
+        <input type="hidden" name="rating_q3" id="rating_q3" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Teacher give notes with proper explanation.</header>
@@ -81,7 +81,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q4" id="rating_q4">
+        <input type="hidden" name="rating_q4" id="rating_q4" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Teacher's ability to organize lectures</header>
@@ -92,7 +92,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q5" id="rating_q5">
+        <input type="hidden" name="rating_q5" id="rating_q5" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Speed or pace of course coverage & class room lectures.</header>
@@ -103,7 +103,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q6" id="rating_q6">
+        <input type="hidden" name="rating_q6" id="rating_q6" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Behavior of the teacher towards students</header>
@@ -114,7 +114,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q7" id="rating_q7">
+        <input type="hidden" name="rating_q7" id="rating_q7" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Teacher promotes TLM*like quize,group discussion etc.</header>
@@ -125,7 +125,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q8" id="rating_q8">
+        <input type="hidden" name="rating_q8" id="rating_q8" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Teacher uses ICTtools(laptops,projecors,online contents)</header>
@@ -136,7 +136,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q9" id="rating_q9">
+        <input type="hidden" name="rating_q9" id="rating_q9" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Teacher spends time for moral ethics</header>
@@ -147,7 +147,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q10" id="rating_q10">
+        <input type="hidden" name="rating_q10" id="rating_q10" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Teacher improves leadership qualities</header>
@@ -158,7 +158,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q11" id="rating_q11">
+        <input type="hidden" name="rating_q11" id="rating_q11" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Teacher give industrial aspects of the subjtects.</header>
@@ -169,7 +169,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q12" id="rating_q12">
+        <input type="hidden" name="rating_q12" id="rating_q12" class="rating-input">
     </div>
     <div class="rating-box">
         <header>Overall teaching effectiveness of the teacher</header>
@@ -180,7 +180,7 @@
             <i class="fa-solid fa-star" data-value="4"></i>
             <i class="fa-solid fa-star" data-value="5"></i>
         </div>
-        <input type="hidden" name="rating_q13" id="rating_q13">
+        <input type="hidden" name="rating_q13" id="rating_q13" class="rating-input">
     </div>
     <input type="submit" name="submit" id="submitbtn">
 </form>

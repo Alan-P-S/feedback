@@ -1,0 +1,17 @@
+{
+    "name": "bindu/feed",
+    "autoload": {
+        "psr-4": {
+            "Bindu\\Feed\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alanps",
+            "email": "alanps3699@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^4.1"
+    }
+}

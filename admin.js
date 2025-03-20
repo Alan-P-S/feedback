@@ -1,29 +1,12 @@
-
-
 let branchDropDown = document.getElementById('branch');
 let semesterDropDown = document.getElementById('semester');
 let subjectDropDown = document.getElementById('subjects');
+console.log(branchDropDown);
 
 let jsonData;
 let branch;
 let semester;
 
-document.getElementById("frm").addEventListener("submit", function(event) {
-    const ratingInputs = document.querySelectorAll(".rating-input");
-    let isValid = true;
-
-    // Validate each rating field
-    ratingInputs.forEach(input => {
-        if (!input.value) {
-            isValid = false;
-        }
-    });
-
-    if (!isValid) {
-        alert(`Please provide a rating `);
-        event.preventDefault(); // Prevent form submission if validation fails
-    }
-});
 
 
 fetch('subject.json').then(response=>response.json()).then(function(data){
@@ -93,35 +76,3 @@ function getSubject(){
     subjectDropDown.innerHTML = out;
     subjectDropDown.disable = false;
 }
-
-
-
-const starsContainer = document.querySelectorAll(".stars");
-
-
-starsContainer.forEach(container=>{
-    const stars = container.querySelectorAll("i");
-    const questionId = container.getAttribute("data-question");
-    const hiddenInput = document.getElementById(`rating_${questionId}`);
-
-    stars.forEach((star,index1)=>{
-        star.addEventListener("click",function(){
-            let rating = this.getAttribute("data-value");
-            stars.forEach((star,index2)=>{
-                if(index2==1){
-                    
-                }
-                index1 >= index2 ? star.classList.add("active") : star.classList.remove("active"); 
-            })
-            console.log(rating);
-            hiddenInput.value = rating;
-            console.log(rating);
-        })
-        
-       
-    })
-
-})
-
-
-
